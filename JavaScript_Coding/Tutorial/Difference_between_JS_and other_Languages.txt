@@ -1,0 +1,14 @@
+So javascript like most programming languages continues to grow new features are added but the way that
+that happens is pretty different than most consumer software or operating systems.
+
+JavaScript is implemented by all the different browsers out there and it's up to those browsers to implement
+new features. 
+
+So the way that it all works is that there's an organization called ECMA. They come up with standards for Ecmascript, like a specification for a programming language.
+You can think of it as almost like a reference.It's a text document that says "Here is a specification for a programming language".
+
+Then it's up to the browsers like Safari or Chrome or Internet Explorer to go and follow those rules
+and implement them as javascript.
+
+There's a committee called T.S. 39 at this Emma organization.They're the ones who are in charge of evolving and maintaining this massive document that describes
+how Ecmascript should work.
