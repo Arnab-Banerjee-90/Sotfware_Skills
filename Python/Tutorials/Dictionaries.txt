@@ -1,0 +1,48 @@
+Dictionary -> Unindexed list of keys:values
+
+>>> my_dict = {"name":{"first_name":"Arnab","last_name":"Banerjee"}}
+>>> my_dict
+{'name': {'first_name': 'Arnab', 'last_name': 'Banerjee'}}
+>>> my_dict["name"]
+{'first_name': 'Arnab', 'last_name': 'Banerjee'}
+>>> my_dict["name"]["first_name"]
+'Arnab'
+>>> my_dict["job"]="none"
+>>> my_dict
+{'name': {'first_name': 'Arnab', 'last_name': 'Banerjee'}, 'job': 'none'}
+>>> my_dict.update({"address":"Ranaghat","hobby":"programming"})
+>>> my_dict
+{'name': {'first_name': 'Arnab', 'last_name': 'Banerjee'}, 'job': 'none', 'address': 'Ranaghat', 'hobby': 'programming'}
+
+.update() - Pass in a dictionary of keys and values to create or update in a single step.
+
+You can override a single key by assigning a new value to it. And you can delete a key by using del and the key's name.
+
+.pop(<key>) - like lists, dicts have .pop(). It'll return the key's value to you and then delete the key.
+.popitem() - similar to .pop() but instead of returning just the value, returns you a tuple (more in the next stage!) with the key and the value. Also, this doesn't take any arguments, you get a random key/value pair!
+.clear() - need to quickly empty out a dictionary? This method is your tool of choice, then
+
+Looping over a dictionary loops over the keys in the dictionary, not the values.
+
+>>> my_dict = {'a': 1, 'b': 2, 'c': 3}
+>>> for key in my_dict:
+. . .     print(key)
+a
+b
+c
+New Terms
+.keys() - this method returns an iterable of all of the keys in a dictionary.
+.values() - this method returns an iterable of all of the values in the dictionary.
+.items() - this method is basically a combo of the above two. It returns an iterable of key/value pairs inside of tuples (more on them in the next stage!).
+
+--> Packing a Dictionary
+>>> def packing(**kwargs):
+...     print(kwargs)
+...
+>>> packing(name="Arnab", age = 28, job = None)
+{'name': 'Arnab', 'age': 28, 'job': None}
+
+-->Unpacking a dictionary
+>>> my_dict = {'name': 'Kenneth'}
+>>> "Hi, my name is {name}!".format(**my_dict)
+"Hi, my name is Kenneth!"

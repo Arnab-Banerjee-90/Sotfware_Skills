@@ -1,0 +1,62 @@
+
+List --> Iterable, Mutable and indexed
+
+>>> []
+[]
+>>> languages=["Python","JavaScript","Java"]
+>>> len(languages)
+3
+>>> chars = list("Congratulations")
+>>> chars
+['C', 'o', 'n', 'g', 'r', 'a', 't', 'u', 'l', 'a', 't', 'i', 'o', 'n', 's']
+>>> temperatures = []
+>>> temperatures.append(98.6)
+>>> temperatures.append(99.4)
+>>> temperatures
+[98.6, 99.4]
+>>> er_temps = [102.2, 103.5, 99.9]
+>>> temperatures.extend(er_temps)
+>>> temperatures
+[98.6, 99.4, 102.2, 103.5, 99.9]
+>>> primary_care_doctors = ["Dr. Scholls", "Dr. Peppers"]
+>>> er_doctors = ["Doug", "Susan"]
+>>> all_doctors = primary_care_doctors + er_doctors
+>>> all_doctors
+['Dr. Scholls', 'Dr. Peppers', 'Doug', 'Susan']
+PS F:\My Files\Treehouse\Python\Basics> python -i .\wishlist.py
+>>> books
+['Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart', 'Python for Data Analysis', 'Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho', 'Python for Kids: A Playful Introduction To Programming - Jason R. Briggs', 'Hello Web App: Learn How to Build a Web App - Tracy Osborn']
+>>> books[0]
+'Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart'
+>>> books.insert(0, "Learning Python: Powerful Object Oriented Programming")
+>>> books
+['Learning Python: Powerful Object Oriented Programming', 'Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart', 'Python for Data Analysis', 'Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho', 'Python for Kids: A Playful Introduction To Programming - Jason R. Briggs', 'Hello Web App: Learn How to Build a Web App - Tracy Osborn']
+books
+['Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart', 'Python for Data Analysis', 'Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho', 'Python for Kids: A Playful Introduction To Programming - Jason R. Briggs', 'Hello Web App: Learn How to Build a Web App - Tracy Osborn']
+>>> recommendation
+"'Learning Python: Powerful Object Oriented Programming"
+>>> books.pop(0)
+'Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart'
+>>> books
+['Python for Data Analysis', 'Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho', 'Python for Kids: A Playful Introduction To Programming - Jason R. Briggs', 'Hello Web App: Learn How to Build a Web App - Tracy Osborn']
+
+
+Methods used on Lists
+
+.append(<value>) - Add a new value onto the end of a list.
+
+.extend(<iterable>) - Make a list longer by adding on the members of another iterable.
+
+.insert(<index>, <value>) - Add a value to a list at a particular index.
+
+You can, of course, also add lists together with the + operator. To do this in place, you'd use the increment operator +=.
+
+del - A keyword for removing items from iterables or deleting whole variables.
+
+.remove() - A list method that removes items from a list by their value.
+
+.pop() will remove and return the last item from a list.
+
+.pop(<index>) will remove whatever item is at <index>, assuming something is.
+
+If there's nothing left in the list, or the provided index isn't available, .pop() will raise an IndexError.

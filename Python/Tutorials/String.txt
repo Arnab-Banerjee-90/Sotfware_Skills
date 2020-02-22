@@ -1,0 +1,31 @@
+>>> "apple" + "Oranges"
+'appleOranges'
+>>> "hello"*3
+'hellohellohello'
+>>> quote = "A person who never made a mistake never tried anything new"
+>>> len(quote)
+58
+>>> type(quote)
+<class 'str'>
+>>> quote.upper
+<built-in method upper of str object at 0x034BED88>
+>>> quote.upper()
+'A PERSON WHO NEVER MADE A MISTAKE NEVER TRIED ANYTHING NEW'
+>>> len
+<built-in function len>
+>>> quote.title()
+'A Person Who Never Made A Mistake Never Tried Anything New'
+>>> str(42)
+'42'
+>>> subject_template = "Thanks for learning {} with us {}!"
+>>> _
+'42'
+>>> subject_template
+'Thanks for learning {} with us {}!'
+>>> subject_template.format("Python","Arnab")
+'Thanks for learning Python with us Arnab!'
+>>> subject_template
+'Thanks for learning {} with us {}!'
+>>> "ham" in 'hamster'
+True
+>>>

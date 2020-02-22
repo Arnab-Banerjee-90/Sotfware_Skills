@@ -1,0 +1,59 @@
+Tuple --> Immutable lists
+
+>>> my_tuple = 1,2,3
+>>> my_tuple
+(1, 2, 3)
+>>> my_second_tuple = tuple([4,5,6,7])
+>>> my_second_tuple
+(4, 5, 6, 7)
+>>> my_third_tuple = tuple("Arnab")
+>>> my_third_tuple
+('A', 'r', 'n', 'a', 'b')
+
+Swapping variable values and simultaneous assignment
+
+>>> a,b,c = 1,2,3
+>>> a
+1
+>>> b
+2
+>>> c
+3
+
+>>> first_num = 20
+>>> second_num = 40
+>>> second_num,first_num = first_num,second_num
+>>> first_num
+40
+>>> second_num
+20
+
+
+Tuple Packing and Unpacking
+
+def add(*nums):
+    total = 0
+    for num in nums:
+        total = total + num
+    return total
+
+def product(*args):
+    product = 1
+    for num in args:
+        product = product*num
+    return product
+
+def stringcases(word):
+    return word.upper(),word.lower(),word.title(),word[::-1]
+
+>>> my_dict = {'name': 'Kenneth', 'age': 33}
+>>> for key, value in my_dict.items():
+. . .     print("{}: {}".format(key, value))
+age: 33
+name: Kenneth
+
+>>> for group in enumerate(my_list):
+. . .     print("{}: {}".format(*group))
+
+>>> for index,value in enumerate(my_list):
+. . .     print("{} {}".format(index,value))
