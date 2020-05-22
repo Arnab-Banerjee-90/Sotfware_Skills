@@ -1,0 +1,5 @@
+1. Text editor
+2. Github account
+3. GIT
+4. nodejs to run browser-sync
+browser-sync start --server --directory --files "*"
